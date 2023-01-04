@@ -16,7 +16,7 @@ const StockDetailPage = () => {
   useEffect(() => {
     dispatch(clearCompany());
     dispatch(fetchCompany(symbol));
-  }, []);
+  }, [dispatch, symbol]);
 
   const state = useSelector((state) => state.companyReducer);
   const grossResult = grossData(state.data);

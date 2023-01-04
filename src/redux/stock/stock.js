@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 const FETCH_STOCK_METRICES_REQUEST = 'FETCH_STOCK_METRICES_REQUEST';
 export const FETCH_STOCK_METRICES_SUCCESS = 'FETCH_STOCK_METRICES_SUCCESS';
@@ -35,11 +35,8 @@ const API_KEY = '643ca28df378efcc88bc889ff2e5c15c';
 const BASE_URL = 'https://financialmodelingprep.com/api/v3';
 export const fetchMetrices = () => (dispatch) => {
   dispatch(fetchMetricesRequest());
-  axios
-    .get(`${BASE_URL}/stock_market/actives?apikey=${API_KEY}`)
-    .then((response) => {
-      dispatch(fetchMetricesSuccess(response.data));
-    })
+  fetch(`${BASE_URL}/stock_market/actives?apikey=${API_KEY}`)
+    .then((response) => response.json()).then((data) => dispatch(fetchMetricesSuccess(data)))
     .catch(() => dispatch(fetchMetricesFailure(true)));
 };
 

@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import filterData from '../../utils/utils';
 
 const FETCH_COMPANY_REQUEST = 'FETCH_COMPANY_REQUEST';
@@ -35,12 +35,7 @@ const API_KEY = '643ca28df378efcc88bc889ff2e5c15c';
 const BASE_URL = 'https://financialmodelingprep.com/api/v3';
 export const fetchCompany = (symbol) => (dispatch) => {
   dispatch(fetchCompanyRequest());
-  axios
-    .get(`${BASE_URL}/income-statement/${symbol}?limit=120&apikey=${API_KEY}`)
-    .then((response) => {
-      dispatch(fetchCompanySuccess(filterData(response.data)));
-    })
-    .catch(() => dispatch(fetchCompanyFailure(true)));
+  fetch(`${BASE_URL}/income-statement/${symbol}?limit=120&apikey=${API_KEY}`).then((response) => response.json()).then((data) => dispatch(fetchCompanySuccess(filterData(data)))).catch(() => dispatch(fetchCompanyFailure(true)));
 };
 
 const companyReducer = (state = intialState, action) => {

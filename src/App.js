@@ -10,7 +10,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMetrices());
-  }, []);
+  }, [dispatch]);
 
   return (
     <BrowserRouter>
