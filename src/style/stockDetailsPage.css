@@ -1,0 +1,17 @@
+.stock-details-page .title {
+  display: flex;
+  justify-content: center;
+}
+
+.stock-details-page .title span {
+  font-size: 4rem;
+  background-color: var(--light);
+  text-align: center;
+  margin: 5% 0;
+  padding: 20px;
+}
+
+.chart {
+  width: 80%;
+  margin: 0 auto;
+}
