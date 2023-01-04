@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Company renders correctly 1`] = `
+<div
+  className="company-card"
+>
+  <div
+    className="company-card-arrow-right"
+  >
+    <a
+      className=""
+      href="/APPL"
+      onClick={[Function]}
+    >
+      <img
+        alt="arrow-right"
+        src="arrow_circle_right.svg"
+      />
+    </a>
+  </div>
+  <div>
+    <h2
+      className="company-card-title"
+    >
+      Apple
+      <small>
+        (
+        APPL
+        )
+      </small>
+    </h2>
+  </div>
+  <div
+    className="content"
+  >
+    <h3>
+      14
+       
+      $
+    </h3>
+    <h3>
+      status:
+       
+      <img
+        alt="arrow-up"
+        src="arrow_up.svg"
+      />
+       
+    </h3>
+  </div>
+  <div>
+    <img
+      alt="bg"
+      className="company-img"
+      src="bg.png"
+    />
+  </div>
+</div>
+`;
+
+exports[`Test CompniesList renders correctly 1`] = `
+<div
+  className="lds-hourglass spinner"
+/>
+`;
+
+exports[`Test Search input renders correctly 1`] = `
+<div
+  className="form-search"
+>
+  <input
+    className="search-input"
+    onChange={[Function]}
+    placeholder="What you search for"
+    value=""
+  />
+</div>
+`;
+
+exports[`Test react components header renders correctly 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="header-logo"
+  >
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="left arrow"
+        src="arrow_left.svg"
+      />
+    </a>
+    <h2>
+      Stock Metrics
+    </h2>
+  </div>
+  <div
+    className="header-icons"
+  >
+    <img
+      alt="mic-icon"
+      src="mic-icon.svg"
+    />
+    <img
+      alt="setting-icon"
+      src="settings-icon.svg"
+    />
+  </div>
+</div>
+`;
