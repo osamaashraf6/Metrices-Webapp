@@ -1,0 +1,23 @@
+.header {
+  background-color: var(--light);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 10vh;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border: 5px solid var(--primary);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.header-icons {
+  display: flex;
+  gap: 20px;
+}

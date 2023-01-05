@@ -1,0 +1,10 @@
+.companies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+@media (min-width: 600px) {
+  .companies-list {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}

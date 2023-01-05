@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { fetchMetrices } from './redux/stock/stock';
+import StocksPage from './pages/StocksPage';
+import StockDetailPage from './pages/StockDetailPage';
+import Header from './components/Header';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchMetrices());
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="" element={<StocksPage />} />
+        <Route path="*" element={<StocksPage />} />
+        <Route path="/:symbol" element={<StockDetailPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

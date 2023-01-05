@@ -60,17 +60,33 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Stock Metrics Webapp] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> Stock Metrics is a web(mobile-focused) software for monitoring the stock exchange's listed firms and seeing their live metrics. It uses data from the Financial Modeling API. 
 
-**[your_project__name]** is a...
+
+![screenshot](./src/assets/screen.gif)
+
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>Webpack</li>
+    <li>chart js</li>
+    <li>redux</li>  
+    <li>React Testing Library</li>
+    <li>jest</li>  
+    <li>linter</li>
+  </ul>
+
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+
 
 <details>
   <summary>Client</summary>
@@ -99,9 +115,13 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+ - [x] created pages folder for the structure of the pages.
+ - [x] Wrote tests
+ - [x] Added a 404 error page
+ - [x] Added a loader to help keep users waiting while data is being fetched
+ - [x] Added dynamic routing the details page
+ - [x] Implemented search bar functionality using reducers and redux store
+ - [x] Implemented charts to present the dynamically generated net income and gross profit in a line chart and bar chart.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,83 +139,50 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- node.js
+- git
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+- Open your terminal
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+- Navigate to the directory where you want to clone the project.
+
+- Clone the project using by running the following command:
+
+`git clone https://github.com/osamaashraf6/Metrices-Webapp.git`
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+Install this project with: node js, run this command `npm install` in the terminal
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+- `npm run build`
+- `npm run start`
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+- `npm run test`
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: `npm run deploy`
 
-<!--
-Example:
 
-```sh
 
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,15 +194,9 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Osama Ashraf](https://github.com/osamaashraf6)
+- Twitter: [Osama Ashraf](https://twitter.com/OsamaAshraf578?t=l75KjrhQgK4h-vSPfgk1gA&s=08)
+- LinkedIn: [Osama Ashraf](https://www.linkedin.com/in/osama-salem-2a046b203)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,9 +206,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **I will enhance the code in the future and try to add some new things💯**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +225,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project feel free to leave a star ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,28 +233,26 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+- [x] I would like to thank Microverse for motivating me to build this beautiful project💯
+- [x] Original design idea by [Nelson Sakwa on Behance..](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29) Under the [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/)👌
 
-I would like to thank...
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **[How to run this project?]**
 
-- **[Question_1]**
+  - [You need to have [Node.js](https://nodejs.org/en/download/) in your local machine, and in the root of the project write `npm run start` in the terminal]
 
-  - [Answer_1]
+- **[Is it open source?]**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - [Yes you are allowed to use this project]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
