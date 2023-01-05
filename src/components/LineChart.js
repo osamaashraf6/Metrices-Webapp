@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { Line } from 'react-chartjs-2';
 
 const LineChart = ({ result }) => {
-  // console.log(Chart);
   const data = {
     labels: [2017, 2018, 2019, 2020, 2021],
     datasets: [

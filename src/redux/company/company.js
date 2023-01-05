@@ -1,4 +1,3 @@
-// import axios from 'axios';
 import filterData from '../../utils/utils';
 
 const FETCH_COMPANY_REQUEST = 'FETCH_COMPANY_REQUEST';

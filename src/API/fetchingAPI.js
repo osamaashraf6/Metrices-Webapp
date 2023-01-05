@@ -1,5 +1,3 @@
-// import axios from 'axios';
-
 const API_KEY = 'c1c49f469a4a562fcad4008d7e66762d';
 const BASE_URL = 'https://financialmodelingprep.com/api/v3';
 
