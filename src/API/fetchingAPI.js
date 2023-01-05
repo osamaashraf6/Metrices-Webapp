@@ -2,8 +2,7 @@ const API_KEY = 'c1c49f469a4a562fcad4008d7e66762d';
 const BASE_URL = 'https://financialmodelingprep.com/api/v3';
 
 export const fetchMetricesAPI = async () => {
-  // eslint-disable-next-line no-console
-  fetch(`${BASE_URL}/stock_market/actives?apikey=${API_KEY}`).then((res) => res.JSON()).then((data) => console.log(data));
+  fetch(`${BASE_URL}/stock_market/actives?apikey=${API_KEY}`).then((res) => res.JSON()).then((data) => data);
 };
 
 export const fetchCompanyDetailsAPI = async (symbol) => {
